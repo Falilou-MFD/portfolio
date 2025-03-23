@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-------------------------------- Header -------------------------------------------->
+    <header>
+        <div class="header-container">
+        <h1>Mouhamadou Falilou DIAGNE</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    
+    <!---------------------------------- Accueil ------------------------------------------>
+    <section id="accueil">
+        <div class="text-accueil">
+            <h2 style="color: #000000;">Bienvenue !</h2>
+            <p style="color: #000000;">Je suis Mouhamadou Falilou DIAGNE</p>
+            <button onclick="scrollToSection('projets')">Voir mes projets</button>
+        </div>
+        <div class="img-accueil"><img src="Data report-bro.png" alt=""></div>
+    </section>
+    
+    <!---------------------------------- À propos ----------------------------------------->
+    <section id="a-propos">
+        <h2>À propos</h2>
+        <div class="a-propos-container">
+            <div class="a-propos-texte">
+                <p>Je m'appelle Mouhamadou Falilou DIAGNE, je suis passionné par les sciences de donnees et le developpement web. <br>
+                Je suis encore en cours de formation mais vous trouverez ici un apercu de mes realisations.</p>
+                <button><a href="CV Développeur Full-Stack.pdf">Telecharger mon CV</a></button>
+            </div>
+            <div class="a-propos-photo">
+                <img src="profile.jpg" alt="Photo de profil">
+            </div>
+        </div>
+    </section>
+
+
+    <!------------------------------------ Projets ---------------------------------------->
+    <section id="projets">
+        <h2>Mes Projets</h2>
+        <div class="projects-grid">
+            <div class="project"><h3>Gestionnaire de contacts avec JavaScript</h3><button><a href="http://" target="_blank" rel="noopener noreferrer">Voir</a></button></div>
+            <div class="project"><h3>Calculatrice avec JavaScript</h3><button><a href="https://github.com/Falilou-MFD/calculatrice.git" target="_blank" rel="noopener noreferrer">Voir</a></button></div>
+            <div class="project"><h3>Web Scraping et Streamlit</h3><button><a href="https://github.com/Falilou-MFD/scraper.git" target="_blank" rel="noopener noreferrer">Voir</a></button></div>
+            <div class="project"><h3>Backend d'une application de collaboration etudiante avec FastAPI</h3><button><a href="https://github.com/Falilou-MFD/Back.git" target="_blank" rel="noopener noreferrer">Voir</a></button></div>
+            <div class="project"><h3>Facture avec JavaScript</h3><button><a href="https://github.com/Falilou-MFD/facture.git" target="_blank" rel="noopener noreferrer">Voir</a></button></div>
+            <div class="project"><h3>Portfolio avec HTML-CSS-JS</h3><button><a href="https://github.com/Falilou-MFD/portfolio.git" target="_blank" rel="noopener noreferrer">Voir</a></button></div>
+            <div class="project"><h3>Design d'un site vitrine de restaurant avec Figma</h3><button>Voir</button></div>
+        </div>
+    </section>
+    
+    <!------------------------------------ Compétences -------------------------------------->
+    <section id="competences">
+        <h2>Compétences</h2>
+        <div class="skills-container">
+            <div class="soft-skills">
+                <h3>Soft Skills</h3>
+                <div class="skill">Communication <progress value="75" max="100"></progress></div>
+                <div class="skill">Travail en équipe <progress value="95" max="100"></progress></div>
+                <div class="skill">Créativité <progress value="55" max="100"></progress></div>
+            </div>
+            <div class="hard-skills">
+                <h3>Hard Skills</h3>
+                <div class="skill">HTML <progress value="90" max="100"></progress></div>
+                <div class="skill">CSS <progress value="80" max="100"></progress></div>
+                <div class="skill">JavaScript <progress value="70" max="100"></progress></div>
+                <div class="skill">Python <progress value="85" max="100"></progress></div>
+                <div class="skill">R Language <progress value="60" max="100"></progress></div>
+                <div class="skill">Scala <progress value="60" max="100"></progress></div>
+                <div class="skill">Java <progress value="60" max="100"></progress></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-------------------------------------- Contact ----------------------------------------->
+    <section id="contact">
+        <h2>Me Contacter</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" id="Nom" placeholder="Nom">
+                <input type="text" placeholder="Prénom">
+            </div>
+            <input type="text" id="Sujet" placeholder="Sujet">
+            <textarea placeholder="Votre message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    
+    <!--------------------------------------- Footer ------------------------------------------>
+    <footer>
+        <p>Designed by Falilou-MFD with HTML, CSS, JS</p>
+        <p>&copy; 2025</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
